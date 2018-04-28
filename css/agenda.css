@@ -1,0 +1,97 @@
+@import "menu.css";
+html {
+  color: #F8F9F9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #161515;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header > .container {
+  width: fit-content;
+  margin: auto;
+}
+
+table {
+  /*display: none;*/
+}
+
+#empty {
+  color: red;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+#div_cards {
+  margin-top: 4.5em;
+  padding: .05em;
+}
+
+.card {
+  margin-top: .5em;
+  border: .01em solid #fff;
+  background: black;
+  padding: .2em;
+}
+
+.datos_contact {
+
+}
+
+/*****************************************************************************************/
+/*********************************  ESTILOS ICONO AGREGAR  *******************************/
+/*****************************************************************************************/
+.div_icon {
+  position: fixed;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  bottom: 2px;
+  right: 2px;
+  z-index: 100;
+  color: #fff;
+  background-color: black;
+}
+
+#add_icon {
+  position: absolute;
+  bottom: .4em;
+  right: .01em;
+  font-size: 2em;
+}
+
+#add_icon:hover {
+  /*background: black;*/
+}
+
+@media (min-width: 576px) {
+
+  table {
+    border-collapse: collapse;
+    width: 35em;
+  }
+
+  th, td {
+    border: .01em solid;
+  }
+
+}
