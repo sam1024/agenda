@@ -38,7 +38,6 @@ $("#form_register").submit(function(e) {
 });
 
 function verificaUser(user) {
-  console.log(user);
   $.post('VerificaUser.php' , {
     user: user,
     beforeSend: function() {
@@ -46,10 +45,8 @@ function verificaUser(user) {
     }
   }, function(resp) {
     if (resp === "0") {
-      console.log("resp " + resp);
       $("#msj").html("Nombre disponible").addClass("disp");
     } else {
-      console.log("resp " + resp);
       $("#msj").html("Nombre no disponible").addClass("ocupado");
     }
 

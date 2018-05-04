@@ -31,6 +31,7 @@ function login(user, pass) {
   }, function(resp) { //CON ESTA FUNCION RECIBIMOS LA RESPUESTA POR PARTE DEL SERVIDOR
     if (resp === "0") {
         $("#msj").html("Inicio de sesión no válido");
+        console.log(resp);
     } else if(resp === "1") {
       location.href = 'agenda.php';
     } else {
